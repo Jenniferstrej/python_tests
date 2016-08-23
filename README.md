@@ -4,7 +4,7 @@ A set of python tests examples
 
 The instructions below are for Mac OS and may need to be adapted for other platforms
 
-Create and use a virtual environment
+#Create and use a virtual environment
 
 create the environment (once):
 
@@ -18,12 +18,12 @@ to deactivate:
 
 deactivate
 
-Install Python pre-requisites
+#Install Python pre-requisites
 
 (in project folder) (with active virtual environment as above)
 
 pip install -r requirements.txt
 
-Running Unit tests
+#Running Unit tests
 
 python -m unittest discover
