@@ -1,0 +1,2 @@
+class ShortRetryException(RuntimeError):
+    pass

@@ -1,0 +1,3 @@
+{
+  "test_generative.py::MyTestCase::test_decode_inverts_encode": true
+}
