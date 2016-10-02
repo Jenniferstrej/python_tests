@@ -18,7 +18,7 @@ class MyTestCase(unittest.TestCase):
 
     @patch('requests.post')
     def test_schedule_article_publication_error(self, mock_requests_post):
-        mock_requests_post.return_value = FakeResponse(200, None)
+        mock_requests_post.return_value = FakeResponse(500, None)
         input = '{"articles":{"article-identifier":"03430","scheduled":"1463151540"}}'
         resp = self.client.post('/api/schedule_article_publication', data=input)
         self.assertDictEqual(json.loads(resp.data), {u'message': u'Error in scheduling service', u'detail': u'Status code from scheduler was 500'})
